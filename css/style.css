@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+/*  font-family: "Italiana", system-ui;*/
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    position:static;
+    top: 0px;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 70px;
+    padding-right: 30px;
+
+}
+.navbar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5625rem;
+    font-family: "Italiana", system-ui;
+}
+.navbar li a:hover{
+    text-decoration:underline;
+    color: gray;
+  
+    
+}
+
+header div h1{
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+    font-family: "Italiana";
+}
+
+@media (max-width: 1024px){
+    .navbar{
+     gap: 50px;
+    }
+    .navbar li a {
+        font-size: 1.25rem ;
+    }
+    header div h1{
+        font-size: 4em;
+    }
+    
+}
+@media (max-width: 768px){
+    .navbar{
+       gap: 20px;
+    }
+    header{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+.container-nov{
+    background-image: url(../assets/img/banner.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    width: 100%;
+
+}
+.nov{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 700px;
+}
+
+.nov div img{
+    height: 500px;
+    width: 100%;
+}
+
+.div-nov{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.729);
+    border: 3px solid rgb(188, 54, 54);
+}
+
+
+.div-nov h2{
+    font-size: 2.5rem;
+    font-family: "Italiana", system-ui;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    
+}
+.div-nov p{
+    font-size: 2.5rem;
+    font-family: "Italiana";
+    padding-bottom: 40px;
+    color: white;
+}
+
+
+.img-nov{
+    height: 70%;
+    margin-right: 100px;
+    margin-top: 30px;
+    border: 3px solid rgb(188, 54, 54);
+    border-radius: 40%;
+    background-color: #05050562;
+}
+
+.img-nov:hover{
+    background-color: #000000;
+}
+
+.buttonBanner{
+    background-color:rgba(0, 0, 0, 0.486);
+    padding: 20px 50px;
+    border: 3px solid rgb(255, 255, 255);
+    color: white;
+
+}
+
+.buttonBanner:hover{
+    background-color: black;
+    text-decoration: underline;
+}
+
+.buttonBanner:active{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 1158px){
+    .nov{
+       
+    }
+    .nov div img{
+        height: 420px;
+    }
+    .div-nov{
+        height: 400px;
+    }
+    .div-nov h2 {
+        font-size: 2.25rem;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .div-nov p {
+        font-size: 2.25rem;;
+    }
+    .img-nov{
+        height: 60%;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1024px){
+    .container-nov{
+        height: 500px;
+        background-size: contain;
+    }
+    .div-nov{
+        height: 21.875rem;
+    }
+    .nov{
+        height: 500px;
+    }
+    .nov div img {
+        height: 350px;
+        padding-bottom: 25px;
+    }
+    .img-nov{
+        margin-right: 20px;
+    }
+    .div-nov h2{
+        font-size: 1.875rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .div-nov p{
+        font-size: 1.875rem;
+        padding-bottom: 10px;
+    }
+    .buttonBanner{
+        padding: 15px 50px;
+    }
+    }
+    @media (max-width: 768px){
+        .container-nov{
+            height: 25rem;
+        }
+        .div-nov{
+            width: 50%;
+            height: 12.5rem;
+        }
+        .nov{
+            height: 25rem;
+        }
+        .nov div img{
+            height: 18.75rem;
+        }
+        .img-nov{
+            height: 300px;
+        }
+        .div-nov h2{
+            font-size: 18px;
+            padding-bottom: 2px;
+        }
+        .div-nov p{
+            font-size: 1.25rem ;
+            padding-bottom: 0px; 
+        }
+        .buttonBanner{
+            padding: 6px 25px;
+            font-size: .625rem;
+            border: 2px solid white;
+        }
+    }
+
+    @media (max-width:584px){
+        .img-nov{
+            margin-right: 5px;
+            width: 40%;
+            height: 250px;
+        }
+        .nov div img{
+            height: 280px;
+        }
+        .nov{
+          
+        }
+        .div-nov h2{
+            font-size: 14px;
+        }
+        .div-nov p{
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 425px){
+        .nov{
+            flex-wrap: nowrap;
+            flex-direction: column;
+           width: 100%;
+           height: 100%
+        }
+        .div-nov{
+            width: 300px;
+            border: 1px solid white;
+            height: 9.375rem;
+        }
+        .img-nov{
+            height: 11.25rem;
+        }
+        .nov div img{
+            height: 13.75rem;
+            padding-bottom: 1.875rem
+        }
+    }
+    .card-container{
+        width: 280px;
+        height: 300px;
+        margin: 0px 50px 50px 50px;
+        border: 3px solid #000000;
+    }
+    .card-container div{
+        width: 100%;
+        height: 180px;
+    }
+    .card-container div img{
+        width: 100%;
+        height: 100%;
+    }
+    .card-container:hover{
+        height: 21.875rem;
+    }
+    .card-container h3{
+        padding: 20px 0px 5px 4px;
+        font-size: 20px;
+        font-family: "Italiana", system-ui;
+    }
+    .card-container h4{
+        padding-left: 6px;
+        font-size: 1.25rem;
+        font-family: "Italiana", system-ui;
+    }
+    .container-producto{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .destacados{
+      padding-bottom: 80px;
+      height: 800px;
+    }
+    .destacados h2{
+        width: 100%;
+        padding-top: 50px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        font-family: "Italiana", system-ui;
+        font-size: 1.875rem;
+    }
+    .container-producto button{
+        margin-left: 20%;
+    }
+    .buttonProducto{
+        background-color:#141414;
+        color: rgb(255, 255, 255);
+        padding: 20px 50px;
+        border: 5px solid rgb(255, 255, 255);
+    }
+        
+    @media (max-width: 1158px){
+        .card-container{
+            margin: 0px 25px 50px 0px;
+        }
+        .destacados{
+            height: 900px;
+            padding-bottom: 150px;
+        }
+        .card-container:hover{
+            height: 280px;
+        }
+        .container-producto{
+        }
+    }
+    @media (max-width: 1024px) {
+        .card-container{
+          margin: 0px 5px 5px 5px;
+          width: 240px;
+          height: 260px;
+        }
+        .card-container:hover{
+            height: 260px
+        }
+        .destacados h2 {
+            padding-bottom: 20px;
+            align-content: center;
+            font-size: 1.25rem;
+        }
+        .card-container div {
+            height: 150px;
+        }
+        .destacados{
+            height: 900px;
+        }
+        .card-container h3{
+            padding: 0px 0px 5px 4px;
+            font-size: .9375rem;
+        }
+        .card-container h4{
+            padding-left: 6px;
+            
+        }
+        .container-producto button{
+            margin-left: 25%;
+          }
+        .buttonProducto{
+            padding: 10px 20px;
+        }
+    }
+    @media (max-width: 768px){
+        .card-container{
+            width: 180px;
+            height: 220px;
+            margin: 0px 8px 5px 5px;
+        }
+        .card-container:hover{
+            height: 13.75rem;
+        }
+        .container-producto h2{
+            padding-top: 5px;
+            padding-bottom: .625rem;
+            margin-bottom: 0px;
+        }
+        .card-container div{
+            height: 6.875rem;
+        }
+        .card-container h3{
+            font-size: .75rem ;
+        }
+        .card-container h4{
+            font-size: .9375rem;
+        }
+        .buttonProducto{
+            padding: 5px 15px;
+            border: 2px solid black;
+        }
+        .container-producto button{
+            margin-left: 20%;
+        }
+
+
+    }
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 250px;
+}
+.wsp{
+    position: fixed;
+    bottom: 20px;
+    right: 6px;
+}
+.wsp img {
+    height: 80px;
+}
+.barra-secundaria{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.logos{
+    align-self: end;
+    height: 40%;
+
+}
+.logos img{
+    height: 74px;
+}
+.copy{
+    align-self: flex-end;
+}
+@media (max-width: 1440px){
+    footer{
+        gap: 84px
+    }
+    .wsp{
+        bottom: 30px;
+    }
+    .wsp img{
+        height: 50px;
+    }
+    .barra-secundaria{
+        gap: 20px;
+    }
+ 
+}
+@media (max-width: 1024px){
+    footer{
+        gap: 70px;
+    }
+    .wsp img{
+        height: 45px;
+    }
+    .barra-secundaria{
+        gap: 20px;
+        font-size: .9375rem;
+        height: 20px;
+    }
+
+    .logos img {
+        height: 60px;
+    }
+    .logos{
+        width: 15%;
+        display: flex;
+    }
+    .copy{
+        width: 110px;
+    }
+    .copy p{
+        font-size: .625rem;
+    
+}
+}
+@media (max-width: 768px){
+    footer{
+        gap: 0px;
+        height: 180px;
+    }
+    .barra-secundaria{
+        margin-left: 20px;
+        font-size: 12px;
+        gap: 15px;
+    }
+    .logos{
+        padding-top: 20px;
+    }
+    .logos img{
+        height: 50px;
+    }
+    .copy{
+        width: 200px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+main{
+    background-color:#D1E9F6;
+    
+}
+.coleccion h2{
+    font-size: 3.125rem;
+    font-weight: bolder;
+    margin: 60px 0px 30px 100px;
+    font-family: "Italiana", system-ui;
+  
+}
+.coleccion p {
+    font-size: 3.125rem;
+    margin: 50px 0px 20px 100px;
+    font-family: "Italiana", system-ui;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/img/banner.jpg);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+}
+.bannerSale{
+    width: 100%;
+    height: 350px;
+    background-image: url(../assets/img/bannerSale1.png);
+    background-position: center;
+    background-size:contain;
+    background-repeat: repeat;
+}
+.productoTienda{
+    width: 420px;
+    height: 600px;
+    margin: 20px 40px 0px 40px;
+}
+.productoTienda div{
+    width: 100%;
+    height: 480px;
+}
+.productoTienda div:hover{
+    height: 500px;
+}
+.productoTienda div img{
+    width: 100%;
+    height: 100%;
+    border: 8px solid rgb(0, 0, 0);
+    border-style:double;
+    background-color: rgb(75, 80, 80);
+}
+.productoTienda h3 {
+    font-size: 1.5625rem;
+    font-family: "Italiana", system-ui;
+    padding-top: 20px;
+}
+.productoTienda h4 {
+    font-size: 1.5625rem;
+    font-family: "Italiana", system-ui;
+    padding-bottom: 90px;
+    margin-bottom: 90px;
+}
+.nosotros{
+    margin-left: 200px;
+    padding: 40px;
+    width: 75%;
+    font-family: "Italiana", system-ui;
+}
+.nosotros h2 {
+    margin-bottom: 30px;
+}
+.nosotros p{
+    font-size: 1.5625rem;
+}
+.container-tienda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.contenedor-contacto{
+    display: flex;
+    justify-content: center;
+}
+.contacto{
+    font-family: "Italiana", system-ui;
+    margin: 20px 0px 50px 0px;
+}
+.contacto input {
+    padding: 5px;
+    width: 500px;
+    border: 2px solid black;
+}
+.contacto-mensaje{
+    height: 300px;
+}
+.titulo-contacto{
+    font-family: "Italiana", system-ui;
+    margin: 0px 0px 30px 200px;
+    padding-top: 30px;
+}
+.suscribite{
+    margin-top: 30px;
+    padding-bottom: 60px;
+}
+.button-contacto{
+    background-color:#000000;
+    color: white;
+    padding: 8px;
+    margin-top: 20px
+}
+.button-contacto:hover{
+    text-decoration: underline;
+}
+.button-contacto:active{
+    color: #000000;
+    background-color: white;
+}
+.contacto-email{
+    padding: 8px;
+    width: 50%;
+    margin-left: 80px;
+}
