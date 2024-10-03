@@ -67,6 +67,15 @@ header div h1{
 
     }
 }
+@media (max-width: 425px){
+    .navbar{
+        gap: 15px;
+    }
+    .navbar li a{
+        font-size: .9375rem;
+    }
+
+}
 
 .container-nov{
     background-image: url(../assets/img/banner.jpg);
@@ -147,9 +156,6 @@ header div h1{
 }
 
 @media (max-width: 1158px){
-    .nov{
-       
-    }
     .nov div img{
         height: 420px;
     }
@@ -242,9 +248,6 @@ header div h1{
         .nov div img{
             height: 280px;
         }
-        .nov{
-          
-        }
         .div-nov h2{
             font-size: 14px;
         }
@@ -257,8 +260,8 @@ header div h1{
         .nov{
             flex-wrap: nowrap;
             flex-direction: column;
-           width: 100%;
-           height: 100%
+            width: 100%;
+            height: 100%
         }
         .div-nov{
             width: 300px;
@@ -410,9 +413,28 @@ header div h1{
         .container-producto button{
             margin-left: 20%;
         }
-
-
     }
+    @media (max-width: 385px){
+        .container-producto{
+            justify-content: space-around;
+        }
+        .card-container{
+            width: 9.375rem;
+            margin: 0px 2px 2px 2px;
+        }
+        .card-container h3{
+            font-size: .6875rem;
+        }
+        .card-container h4{
+            font-size: .75rem;
+        }
+        .buttonProducto{
+            padding: 2px 12px;
+        }
+        .container-producto button{
+            margin-left: 15%;
+        }
+        }
 footer{
     width: 100%;
     height: 200px;
@@ -461,7 +483,6 @@ footer{
     .barra-secundaria{
         gap: 20px;
     }
- 
 }
 @media (max-width: 1024px){
     footer{
@@ -473,7 +494,7 @@ footer{
     .barra-secundaria{
         gap: 20px;
         font-size: .9375rem;
-        height: 20px;
+        height: 80px;
     }
 
     .logos img {
@@ -510,12 +531,40 @@ footer{
     .copy{
         width: 200px;
         height: 40px;
-        display: flex;
+         display: flex;
         justify-content: center;
         align-items: center;
     }
     
 }
+@media (max-width: 425px){
+    .barra-secundaria{
+        margin-left: 0px;
+        font-size: .625rem;
+    }
+    .logos img {
+        height: 2.8125rem;
+    }
+
+}
+@media (max-width: 375px){
+    .logos img {
+        height: 2.5rem;
+    }
+    .contenedor-barra-sec{
+        height: 3.125rem;
+    }
+    footer{
+        height: 150px;
+    }
+    .copy{
+        display: none;
+    }
+    .copy p{
+        font-size: 6px
+    }
+
+    }
 main{
     background-color:#D1E9F6;
     
@@ -535,31 +584,39 @@ main{
 .banner{
     width: 100%;
     height: 300px;
-    background-image: url(../assets/img/banner.jpg);
+    background-image: url(../assets/img/bannerProducto.jfif);
     background-position: center;
-    background-size: contain;
+    background-size:contain;
     display: flex;
 }
 .bannerSale{
     width: 100%;
     height: 350px;
-    background-image: url(../assets/img/bannerSale1.png);
+    background-image: url(../assets/img/bannerSale2.jfif);
     background-position: center;
     background-size:contain;
     background-repeat: repeat;
 }
+.container-tienda{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
 .productoTienda{
-    width: 420px;
+    width: 360px;
     height: 600px;
     margin: 20px 40px 0px 40px;
 }
-.productoTienda div{
-    width: 100%;
-    height: 480px;
+
+
+@media(min-width:1440px){
+    .productoTienda div img:hover{
+        height: 500px;
+    }
 }
-.productoTienda div:hover{
-    height: 500px;
-}
+
 .productoTienda div img{
     width: 100%;
     height: 100%;
@@ -578,6 +635,72 @@ main{
     padding-bottom: 90px;
     margin-bottom: 90px;
 }
+@media (max-width:1024px){
+    .banner{
+        height: 240px;
+    }
+    .productoTienda{
+        margin: 20px 10px 0px 10px;
+    }
+}
+@media (max-width:768px){
+    .banner{
+        height: 200px;
+    }
+    .bannerSale{
+        height: 12.5rem;
+    }
+    .productoTienda{
+        width: 15.625rem;
+        height: 31.25rem;
+        margin: 5px 5px 0px 5px
+    }
+    .productoTienda div{
+        height: 380px;
+    }
+    .productoTienda h3{
+        font-size: 1.25rem;
+        padding-top: 15px;
+    }
+    .productoTienda h4{
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+}
+@media (max-width:520px){
+    .productoTienda{
+        width: 185px;
+        height: 400px;
+       
+    }
+    .productoTienda div{
+        height: 17.5rem;
+    }
+}
+@media (max-width:425px){
+    .banner{
+        height: 150px;
+    }
+    .bannerSale{
+        height: 150px;
+    }
+    .productoTienda{
+        width: 155px;
+        height: 350px;
+        margin: 5px 1px 1px 1px;
+    }
+    .productoTienda div{
+        height: 250px;
+    }
+    .productoTienda h3{
+        font-size: 15px;
+    }
+    .productoTienda h4{
+        font-size: 20px;
+    }
+
+    
+}
 .nosotros{
     margin-left: 200px;
     padding: 40px;
@@ -590,22 +713,23 @@ main{
 .nosotros p{
     font-size: 1.5625rem;
 }
-.container-tienda{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
+
 .contenedor-contacto{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat (3,1fr);
+    grid-template-rows: repeat (3,1fr);
+    
 }
 .contacto{
     font-family: "Italiana", system-ui;
     margin: 20px 0px 50px 0px;
+    grid-column: 2/3;
+    grid-row: 2/5;
+    justify-content: center;
 }
 .contacto input {
     padding: 5px;
-    width: 500px;
+    width: 600px;
     border: 2px solid black;
 }
 .contacto-mensaje{
@@ -619,6 +743,9 @@ main{
 .suscribite{
     margin-top: 30px;
     padding-bottom: 60px;
+    grid-column: 2;
+    grid-row: 2/3;
+    align-items: end;
 }
 .button-contacto{
     background-color:#000000;
@@ -635,6 +762,6 @@ main{
 }
 .contacto-email{
     padding: 8px;
-    width: 50%;
-    margin-left: 80px;
+    width: 40%;
+    
 }
